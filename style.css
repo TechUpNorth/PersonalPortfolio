@@ -1,0 +1,383 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: black;
+  color: white;
+}
+
+/* header css */
+
+#header {
+  width: 100%;
+  height: 90vh;
+}
+
+.header-container {
+  padding: 15px 3%;
+  background-color: #262626;
+}
+.container {
+  padding: 15px 10%;
+}
+.logo {
+  width: 350px;
+  padding-top: 15px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+  position: relative;
+}
+nav ul li a:hover::after {
+  width: 100%;
+}
+nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: white;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.8s;
+}
+.header-text {
+  margin-top: 10%;
+  font-size: 35px;
+}
+.header-text h1 span {
+  color: #fca311;
+  display: inline-block;
+  position: relative;
+  transition: transform 0.3s;
+}
+
+.header-text span:hover {
+  transform: scale(1.1);
+}
+/* about css */
+
+#about {
+  padding: 100px 0;
+}
+.headshot {
+  width: 100%;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.about-one {
+  flex-basis: 35%;
+}
+.about-two {
+  flex-basis: 60%;
+}
+
+.section-title {
+  font-size: 60px;
+  font-weight: 600;
+  color: white;
+  padding-bottom: 20px;
+}
+
+.about-description {
+  font-size: 20px;
+}
+.tabs {
+  display: flex;
+  margin: 20px 0 40px;
+}
+
+.tab-links {
+  margin-right: 50px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+
+.tab-links::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: white;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.8s;
+}
+
+.tab-links.active::after {
+  width: 100%;
+}
+
+.tab-contents ul li {
+  list-style: none;
+  margin: 40px 0;
+}
+
+.tab-contents ul li span.unc {
+  color: #4b9cd3;
+  font-size: 20px;
+}
+
+.tab-contents ul li span.usc {
+  color: #990000;
+  font-size: 20px;
+}
+
+.tab-contents ul li span.skill {
+  color: wheat;
+  font-size: 20px;
+}
+
+.tab-contents {
+  display: none;
+}
+
+.tab-contents.info {
+  display: block;
+}
+
+/* experience css */
+
+#experience {
+  padding: 40px 0;
+}
+
+.experiences-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+
+.experiences-list div {
+  background: #262626;
+  padding: 40px;
+  font-size: 25px;
+  font-weight: 300;
+  border-radius: 10px;
+  transition: transform 0.5s;
+}
+
+.experiences-list div i {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.experiences-list div h2 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.experiences-list div a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.experiences-list div:hover {
+  background: lightgray;
+  color: black;
+  transform: translateY(-10px);
+}
+
+.experiences-list div a:hover {
+  color: black;
+}
+
+/* project css */
+
+#project {
+  padding: 50px 0;
+}
+
+/* contact css */
+
+.contact-left {
+  flex-basis: 35%;
+  padding: 70px 0;
+}
+
+.contact-right {
+  flex-basis: 60%;
+  padding: 70px 0;
+}
+
+.contact-left a {
+  margin-top: 30px;
+  color: white;
+  display: block;
+}
+
+.contact-left a i {
+  color: white;
+  margin-right: 15px;
+  font-size: 25px;
+}
+
+.button {
+  display: block;
+  margin: 50px auto;
+  width: fit-content;
+  border: 1px solid lightgray;
+  padding: 14px 50px;
+  border-radius: 6px;
+}
+
+.button.download {
+  display: inline-block;
+  background: lightgray;
+  text-decoration: none;
+  color: black;
+}
+
+.button:hover {
+  background: black;
+  color: white;
+}
+
+.contact-right form {
+  width: 100%;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: #262626;
+  padding: 15px;
+  margin: 15px 0;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 6px;
+}
+
+form button {
+  padding: 14px 60px;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+  float: left;
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 25px 0;
+  background: #262626;
+  font-weight: 300;
+  margin-top: 20px;
+}
+/* media query css */
+
+nav .fa-regular.fa-rectangle-xmark {
+  display: none;
+}
+
+nav .fa-solid.fa-bars {
+  display: none;
+}
+
+#submit-message {
+  margin-top: 160px;
+  display: block;
+  color: wheat;
+}
+@media only screen and (max-width: 700px) {
+  .logo {
+    width: 300px;
+    padding-top: 15px;
+  }
+
+  .header-text {
+    margin-top: 80%;
+    font-size: 40px;
+  }
+  .header-text h1 {
+    font-size: 30px;
+  }
+  nav .fa-regular.fa-rectangle-xmark {
+    display: block;
+    font-size: 25px;
+  }
+  nav .fa-solid.fa-bars {
+    display: block;
+    font-size: 25px;
+  }
+  nav ul {
+    background: #262626;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 25px;
+  }
+  nav ul .fa-solid.fa-bars {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+  nav ul .fa-regular.fa-rectangle-xmark {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+  .section-title {
+    font-size: 40px;
+  }
+  .about-one,
+  .about-two {
+    flex-basis: 100%;
+  }
+
+  .about-one {
+    margin-bottom: 30px;
+  }
+
+  .about-two {
+    font-size: w0px;
+  }
+  .contact-left,
+  .contact-right {
+    flex-basis: 100%;
+  }
+}

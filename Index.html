@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <title>Ose Izokun's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/dcf2b2314c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins:400,700"
+    />
+  </head>
+  <body>
+    <!-- header section -->
+    <div id="header">
+      <div class="header-container">
+        <nav>
+          <img src="photos/TUPlogo.png" class="logo" />
+          <ul id="sidemenu">
+            <li>
+              <a href="#header">Home</a>
+            </li>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#experience">Experience</a>
+            </li>
+            <li>
+              <a href="#">Projects</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+            <i class="fa-regular fa-rectangle-xmark" onclick="closeit()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openit()"></i>
+        </nav>
+      </div>
+      <div class="container intro">
+        <div class="header-text">
+          <p>Software Developer</p>
+          <h1>
+            Hello, my name is <br />
+            <span>Ose Izokun,</span> <br />
+            and welcome to my personal website.
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- about section -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-one">
+            <img src="photos/headshot.png" class="headshot" />
+          </div>
+          <div class="about-two">
+            <h1 class="section-title">Who is Ose Izokun?</h1>
+            <p class="about-description">
+              I am a software developer and a master's student at the University
+              of Southern California. I recently graduated from UNC Chapel Hill
+              in May 2023 with a Bachelor of Science in Computer Science. I grew
+              up in Winnipeg, Canada, which is where I got my slogan "Tech Up
+              North." My interest in computer science began in high school as I
+              enjoyed math and other STEM-based classes. During my senior year,
+              I attended an engineering seminar at my local university, where I
+              was first introduced to computer science. Initially, my main
+              interest was in other disciplines of engineering, and I had
+              limited knowledge about computer science. However, after attending
+              that seminar, my passion for computer science only grew. Overall,
+              I am someone who is open to new opportunities and constantly seeks
+              personal growth as a developer.
+            </p>
+            <div class="tabs">
+              <p class="tab-links active" onclick="opentab('education')">
+                Education
+              </p>
+              <p class="tab-links" onclick="opentab('skills')">Skills</p>
+            </div>
+            <div class="tab-contents info" id="education">
+              <ul>
+                <li>
+                  <span class="unc">
+                    University of North Carolina at Chapel Hill
+                  </span>
+                  <br />
+                  BS in Computer Science, minor in Public Policy.
+                  <br />
+                  2019-2023
+                </li>
+                <li>
+                  <span class="usc"> University of Southern California </span>
+                  <br />
+                  MS in Computer Science
+                  <br />
+                  2024-2025
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="skills">
+              <ul>
+                <li>
+                  <span class="skill"> Full-Stack </span>
+                  <br />
+                  Front-end and Back-end development.
+                </li>
+                <li>
+                  <span class="skill"> Program Manager </span>
+                  <br />
+                  Project leadership and coordination.
+                </li>
+                <li>
+                  <span class="skill"> Web Developer </span>
+                  <br />
+                  Creating website experiences.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- experience section -->
+    <div id="experience">
+      <div class="container">
+        <h1 class="section-title">Work Experience</h1>
+        <div class="experiences-list">
+          <div>
+            <i class="fa-brands fa-microsoft"></i>
+            <h2>Software Engineer Intern</h2>
+            <p>
+              I was a intern at Microsoft that conbtributed to the development
+              and innovation of Microsft's products while gaining industry and
+              work experience.
+            </p>
+            <a href="#" onclick="learnMoreFunction(event, 'swe')">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-internet-explorer"></i>
+            <h2>Explore Intern</h2>
+            <p>
+              I worked as a software engineer and program manager intern. I was
+              able to work in a team of other first and second years and create
+              a summer project.
+            </p>
+            <a href="#" onclick="learnMoreFunction(event, 'explore')"
+              >Learn more</a
+            >
+          </div>
+          <div>
+            <i class="fa-solid fa-person-chalkboard"></i>
+            <h2>Learning Assistant</h2>
+            <p>
+              I worked as a math and computer science undergraduate learning
+              assistant, where I collaborated with professors to provide student
+              support, including one-on-one tutoring and assisting in classroom
+              settings.
+            </p>
+            <a href="#" onclick="learnMoreFunction(event, 'ula')">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Projects section -->
+
+    <!-- <div id="projects">
+      <div class="container">
+        <h1 class="section-title">Project Portfolio</h1>
+        <div class="project-list">
+          <div class="project">
+
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- Contact section -->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="section-title">Contact Me</h1>
+            <a href="mailto:oizokun101@gmail.com" class="email-link"
+              ><i class="fa-solid fa-at"></i>oizokun101@gmail.com</a
+            >
+
+            <a href="tel:+19842455595"
+              ><i class="fa-solid fa-mobile-screen-button"></i>984-245-5595</a
+            >
+
+            <a href="Ose Izokun's Resume.pdf" download class="button download"
+              >Download Resume</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input
+                type="text"
+                name="Name"
+                placeholder="Enter your name"
+                required
+              />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Enter your email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Add any additional details"
+              ></textarea>
+              <button type="submit" class="button">Submit</button>
+            </form>
+            <span id="submit-message"></span>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <p>
+          Ose Izokun - Tech Up North
+          <i class="fa-solid fa-gear" style="color: #ffffff"></i>
+        </p>
+      </div>
+    </div>
+
+    <!-- script sections -->
+
+    <!-- about scripts -->
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabvalues) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("info");
+        }
+        event.currentTarget.classList.add("active");
+        document.getElementById(tabvalues).classList.add("info");
+      }
+    </script>
+
+    <!-- side menu scripts -->
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openit() {
+        sidemenu.style.right = "0";
+      }
+
+      function closeit() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+
+    <!-- submit form script -->
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbzGqzPlZnX5ektzzmCGQGoarFdTIluMLLa-2oJAIP1jAaZQhy3E4egcJceVTnPJJiKWkQ/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const message = document.getElementById("submit-message");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            message.innerHTML = "Your message has been sent successfully";
+            setTimeout(function () {
+              message.innerHTML = "";
+            }, 6000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+
+    <!-- learn more script -->
+    <script>
+      const content = {
+        explore: {
+          original:
+            "I worked as a software engineer and program manager intern. I was able to work in a team of other first and second years and create a summer project.",
+          new: "I created an API using C# and unit tests to check the API functionality. I also collaborated with team members to present our project where we displayed the API functionality and performance improvements.",
+        },
+        swe: {
+          original:
+            "I was a intern at Microsoft that contributed to the development and innovation of Microsoft's products while gaining industry and work experience.",
+          new: "I implemented new UX features to the Microsoft 365 Apps Admins center to improve the customer experience, which helped me grow as a UX developer. I also worked with backend technologies such as Azure services and C# to create working APIs to be integrated within the UX.",
+        },
+        ula: {
+          original:
+            "I worked as a math and computer science undergraduate learning assistant, where I collaborated with professors to provide student support, including one-on-one tutoring and assisting in classroom settings.",
+          new: "I performed tasks such as answering questions during classes and correcting students' work. I hosted weekly office hours for students with the aim of supporting them in their understanding of the course material. I also developed coursework answer sheets and reviewed them with students.",
+        },
+      };
+
+      function learnMoreFunction(event, role) {
+        event.preventDefault();
+        const link = event.target;
+        const parentDiv = link.parentNode;
+        const paragraphs = parentDiv.getElementsByTagName("p");
+        const text = link.textContent;
+
+        if (text === "Go back") {
+          paragraphs[0].textContent = content[role].original;
+        } else {
+          paragraphs[0].textContent = content[role].new;
+        }
+        link.textContent = text === "Go back" ? "Learn more" : "Go back";
+      }
+    </script>
+  </body>
+</html>
